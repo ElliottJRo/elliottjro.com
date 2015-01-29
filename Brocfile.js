@@ -73,10 +73,15 @@ app.import({
   production: "bower_components/sly/dist/sly.min.js"
 });
 
+app.import("bower_components/foundation/js/vendor/modernizr.js");
+app.import("bower_components/foundation/js/vendor/fastclick.js");
+
 app.import({
   development: "bower_components/foundation/js/foundation.js",
   production: "bower_components/foundation/js/foundation.min.js"
 })
 
+app.import("bower_components/foundation/css/normalize.css");
+app.import("bower_components/foundation/css/foundation.css");
 
 module.exports = app.toTree();
