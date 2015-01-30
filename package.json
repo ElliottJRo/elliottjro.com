@@ -33,6 +33,7 @@
     "ember-export-application-global": "^1.0.0",
     "express": "^4.8.5",
     "glob": "^4.0.5",
-    "ember-cli-htmlbars": "^0.6.0"
+    "ember-cli-htmlbars": "^0.6.0",
+    "broccoli-sass": "^0.3.3"
   }
 }

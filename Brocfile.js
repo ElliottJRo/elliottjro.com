@@ -82,6 +82,5 @@ app.import({
 })
 
 app.import("bower_components/foundation/css/normalize.css");
-app.import("bower_components/foundation/css/foundation.css");
 
 module.exports = app.toTree();
