@@ -72,6 +72,8 @@ app.import({
   production: "bower_components/jquery/dist/jquery.min.js"
 });
 
+app.import("vendor/vendor.js");
+
 // import sly scroller plugin
 app.import({
   development: "bower_components/sly/dist/sly.js",
