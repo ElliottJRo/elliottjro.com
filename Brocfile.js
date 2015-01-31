@@ -6,6 +6,11 @@ var config = require("./config/environment")(env);
 
 var app = new EmberApp({
   wrapInEval: false,
+  "ember-cli-foundation-sass": {
+    "modernizer": true,
+    "fastclick": true,
+    "foundationJs": "all"
+  }
 });
 
 
@@ -72,15 +77,5 @@ app.import({
   development: "bower_components/sly/dist/sly.js",
   production: "bower_components/sly/dist/sly.min.js"
 });
-
-app.import("bower_components/foundation/js/vendor/modernizr.js");
-app.import("bower_components/foundation/js/vendor/fastclick.js");
-
-app.import({
-  development: "bower_components/foundation/js/foundation.js",
-  production: "bower_components/foundation/js/foundation.min.js"
-})
-
-app.import("bower_components/foundation/css/normalize.css");
 
 module.exports = app.toTree();
