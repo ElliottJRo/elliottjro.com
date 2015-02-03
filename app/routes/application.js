@@ -1,7 +1,16 @@
 export default Ember.Route.extend({
-  actions: {
-    didTransition: function() {
 
-    }
+
+  renderTemplate: function(controller, model) {
+
+    this._super(controller, model);
+
+    this.render("views/footer", {
+      into: "application",
+      outlet: "footer"
+    });
+
   }
+
+
 });
