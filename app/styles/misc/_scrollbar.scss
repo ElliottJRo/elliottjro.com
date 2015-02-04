@@ -1,0 +1,34 @@
+.scrollbar {
+  width: 10px;
+  height: 400px;
+  position: absolute;
+  right: 10px;
+  width: 2px;
+  background: #ccc;
+  line-height: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 3px;
+}
+::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  max-height: 50px;
+  background-color: #666;
+  border: #FFF solid 3px;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+::-webkit-resizer {
+  background-color: transparent;
+}
