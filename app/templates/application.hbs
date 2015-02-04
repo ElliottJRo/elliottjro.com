@@ -1,19 +1,21 @@
-<div class="sticky contain-to-grid">
-{{!--   <div class="inner-wrap"> --}}
-    <nav class="top-bar " data-topbar role="navigation">
-      <section class="left-small show-for-small-up">
-        <a class="left-off-canvas-toggle menu-icon" aria-expanded="false"><span></span></a>
-      </section>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap">
 
-      <section class="right top-bar-section">
-        <h1 class="title">Foundation</h1>
-      </section>
+    <div class="header">
+      <nav class="tab-bar" data-topbar data-options="is_hover: false">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
 
-    </nav>
-</div>
-{{!--     <aside class="left-off-canvas-menu">
+        <section class="right tab-bar-section">
+          <h1 class="title"> Test Title</h1>
+        </section>
+      </nav>
+    </div>
+
+    <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-        <li><label>Foundation</label></li>
+        <li><label>Elliott J Ro</label></li>
         {{#each linkItem in navigationLinks}}
           <li>
             {{#link-to linkItem.route}}
@@ -22,12 +24,13 @@
           </li>
         {{/each}}
       </ul>
-    </aside> --}}
+    </aside>
 
     {{outlet}}
 
     {{outlet "footer"}}
 
-{{!--     <a class="exit-off-canvas"></a> --}}
+    <a class="exit-off-canvas"></a>
 
-{{!--   </div> --}}
+  </div>
+</div>
