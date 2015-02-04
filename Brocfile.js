@@ -80,4 +80,6 @@ app.import({
   production: "bower_components/sly/dist/sly.min.js"
 });
 
+app.import("vendor/foundation/offcanvas-override.js");
+
 module.exports = app.toTree();

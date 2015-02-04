@@ -1,17 +1,15 @@
 <div class="off-canvas-wrap" data-offcanvas>
-  <div class="inner-wrap">
+  <div class="fixed off-canvas-fixed">
 
-    <div class="header">
-      <nav class="tab-bar" data-topbar data-options="is_hover: false">
-        <section class="left-small">
-          <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-        </section>
+    <nav class="tab-bar" data-topbar data-options="is_hover: false">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
 
-        <section class="right tab-bar-section">
-          <h1 class="title"> Test Title</h1>
-        </section>
-      </nav>
-    </div>
+      <section class="right tab-bar-section">
+        <h1 class="title"> Test Title</h1>
+      </section>
+    </nav>
 
     <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
@@ -25,7 +23,9 @@
         {{/each}}
       </ul>
     </aside>
+  </div>
 
+  <div class="inner-wrap">
     {{outlet}}
 
     {{outlet "footer"}}
