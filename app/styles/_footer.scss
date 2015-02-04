@@ -1,0 +1,25 @@
+.footer-bottom {
+  background-color: #333;
+  padding: 24px 0 10px;
+  p.copyright {
+    color: white;
+  }
+  ul.home-social {
+
+  }
+  ul.links {
+    line-height: 1.6;
+    font-size: 1rem;
+    list-style-position: outside;
+    margin: 0;
+    display: inline-block;
+    li {
+      display: block;
+      float: left;
+      margin-left: 6px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.77778rem;
+    }
+  }
+}
