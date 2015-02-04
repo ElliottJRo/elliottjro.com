@@ -66,13 +66,16 @@ app.import({
   production:  "bower_components/ember/ember.prod.js"
 });
 
+// import Ember addons
+app.import("bower_components/ember-animate/ember-animate.js");
+
 // import jquery and jquery plugins
 app.import({
   development: "bower_components/jquery/dist/jquery.js",
   production: "bower_components/jquery/dist/jquery.min.js"
 });
 
-app.import("vendor/vendor.js");
+//app.import("vendor/vendor.js");
 
 // import sly scroller plugin
 app.import({
@@ -81,5 +84,7 @@ app.import({
 });
 
 app.import("vendor/foundation/offcanvas-override.js");
+
+
 
 module.exports = app.toTree();
