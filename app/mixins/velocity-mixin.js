@@ -2,7 +2,7 @@ import Ember from "ember";
 
 /* global jQuery */
 /*jshint unused:false */
-var $ = jQuery;
+//var $ = jQuery;
 
 Ember.assert("Velocity.js must be installed to use this mixin.", $.Velocity);
 
