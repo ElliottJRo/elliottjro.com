@@ -1,5 +1,5 @@
-import Ember from "ember";
-import VelocityMixin from 'ember-velocity-mixin/main';
+import Ember from 'ember';
+import VelocityMixin from 'elliottjro/mixins/velocity-mixin';
 
 export default Ember.View.extend(VelocityMixin, {
 

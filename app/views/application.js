@@ -1,7 +1,6 @@
 import Ember from "ember";
-import VelocityMixin from 'ember-velocity-mixin/main';
 
-export default Ember.View.extend(VelocityMixin, {
+export default Ember.View.extend({
 
   initFoundation: function() {
     this.$(document).foundation();

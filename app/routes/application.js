@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default Ember.Route.extend({
 
 
@@ -5,9 +7,9 @@ export default Ember.Route.extend({
 
     this._super(controller, model);
 
-    this.render("views/footer", {
-      into: "application",
-      outlet: "footer"
+    this.render('views/footer', {
+      into: 'application',
+      outlet: 'footer'
     });
 
   }

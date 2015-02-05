@@ -1,5 +1,5 @@
-var ApplicationAdapter = DS.RESTAdapter.extend({
+import DS from 'ember-data';
+
+export default DS.RESTAdapter.extend({
   namespace: 'api',
 });
-
-export default ApplicationAdapter;

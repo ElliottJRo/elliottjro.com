@@ -61,11 +61,10 @@ app.options.inlineContent = {
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-// app.import({
-//   development: "bower_components/ember/ember.js",
-//   production:  "bower_components/ember/ember.prod.js"
-// });
-app.import("bower_components/ember/ember.js");
+app.import({
+  development: "bower_components/ember/ember.js",
+  production:  "bower_components/ember/ember.prod.js"
+});
 
 // import Ember addons
 app.import("bower_components/ember-animate/ember-animate.js");
@@ -76,13 +75,8 @@ app.import({
   production: "bower_components/jquery/dist/jquery.min.js"
 });
 
-//app.import("vendor/vendor.js");
-
-// import sly scroller plugin
-// app.import({
-//   development: "bower_components/sly/dist/sly.js",
-//   production: "bower_components/sly/dist/sly.min.js"
-// });
+// import velocity
+//app.import("bower_components/velocity/velocity.js");
 
 app.import("vendor/foundation/offcanvas-override.js");
 
