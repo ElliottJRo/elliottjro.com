@@ -76,7 +76,7 @@ app.import({
 });
 
 // import velocity
-//app.import("bower_components/velocity/velocity.js");
+app.import("bower_components/velocity/velocity.js");
 
 app.import("vendor/foundation/offcanvas-override.js");
 
