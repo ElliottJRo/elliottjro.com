@@ -44,13 +44,17 @@ $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness
 
 // Off Canvas Menu Icon Variables
 $tabbar-menu-icon-color: #333 !default;
-$tabbar-menu-icon-hover: scale-color($tabbar-menu-icon-color, $lightness: -30%) !default;
+$tabbar-menu-icon-hover: scale-color($tabbar-menu-icon-color, $lightness: 50%) !default;
+$tabbar-menu-icon-background: #fff;
 
 $tabbar-menu-icon-text-indent: rem-calc(35) !default;
 $tabbar-menu-icon-width: $tabbar-height !default;
 $tabbar-menu-icon-height: $tabbar-height !default;
 $tabbar-menu-icon-line-height: rem-calc(33) !default;
 $tabbar-menu-icon-padding: 0 !default;
+$tabbar-menu-icon-margin: 8px !default;
+$tabbar-menu-icon-border: 1px solid $tabbar-menu-icon-color;
+$tabbar-menu-icon-border-radius: 6px;
 
 $tabbar-hamburger-icon-width: rem-calc(16) !default;
 $tabbar-hamburger-icon-left: false !default;
@@ -353,9 +357,13 @@ $menu-slide: "transform 500ms ease" !default;
       width: $tabbar-height;
       height: $tabbar-height;
       display: block;
+      background: $tabbar-menu-icon-background;
       line-height: $tabbar-menu-icon-line-height;
       padding: $tabbar-menu-icon-padding;
+      margin: $tabbar-menu-icon-margin;
       color: $tabbar-menu-icon-color;
+      border: $tabbar-menu-icon-border;
+      border-radius: $tabbar-menu-icon-border-radius;
       position: relative;
       @include translate3d(0,0,0);
 

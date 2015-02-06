@@ -23,9 +23,9 @@ var app = new EmberApp({
  * 
  */
 app.options.inlineContent = {
-  // "google-map": {
-  //   content: '<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3&libraries=places&sensor=false"></script>'
-  // },
+  "footer": {
+    file: "./vendor/footer.html",
+  }
   // "google-analytics": {
   //   file: "./vendor/google-analytics.js",
   //   postProcess: function(content) {
