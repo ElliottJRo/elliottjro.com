@@ -25,6 +25,12 @@
       text-transform: uppercase;
       font-weight: 700;
       font-size: 0.77778rem;
+      a {
+        color: #3D3D3D;
+      }
+      a:hover {
+        color: lighten(#3D3D3D, 40%);
+      }
     }
   }
 }

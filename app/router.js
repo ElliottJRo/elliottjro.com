@@ -7,7 +7,16 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
 
-  this.route("projects");
+  this.resource("projects");
+
+  this.resource("about");
+
+  this.resource("contact");
+
+  this.resource("blog", function() {
+
+  });
+
 });
 
 export default Router;
