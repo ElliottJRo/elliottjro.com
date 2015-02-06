@@ -25,6 +25,7 @@ var app = new EmberApp({
 app.options.inlineContent = {
   "footer": {
     file: "./vendor/footer.html",
+    enabled: true
   }
   // "google-analytics": {
   //   file: "./vendor/google-analytics.js",
