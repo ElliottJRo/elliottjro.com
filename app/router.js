@@ -9,8 +9,6 @@ Router.map(function() {
 
   this.resource("projects");
 
-  this.resource("about");
-
   this.resource("contact");
 
   this.resource("blog", function() {

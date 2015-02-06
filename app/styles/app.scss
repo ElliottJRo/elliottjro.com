@@ -16,11 +16,12 @@ body >   .ember-view {
     .inner-wrap {
       height: 100%;
       overflow-y: auto;
+      margin-top: 16px;
       .main-content {
         min-height: 100%;
         height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
         height: 100%;
-        margin: 0 auto -105px; /* the bottom margin is the negative value of the footer's height */
+        margin: 0px auto -105px; /* the bottom margin is the negative value of the footer's height */
         padding-bottom: 155px;
       }
     }
