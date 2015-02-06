@@ -5,3 +5,19 @@
 @import "misc/footer";
 @import "misc/scrollbar";
 //@import "misc/transitions";
+
+body {
+  height: 100%;
+}
+body >   .ember-view {
+  height:100%;
+  .off-canvas-wrap {
+    height: 100%;
+    .inner-wrap {
+      height: 100%;
+      .main-content {
+        height: 100%;
+      }
+    }
+  }
+}
