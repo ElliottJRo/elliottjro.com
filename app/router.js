@@ -7,13 +7,13 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
 
-  this.resource("projects");
+  // this.resource("projects");
 
-  this.resource("contact");
+  // this.resource("contact");
 
-  this.resource("blog", function() {
+  // this.resource("blog", function() {
 
-  });
+  // });
 
 });
 
