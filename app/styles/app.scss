@@ -27,3 +27,18 @@ body > .ember-view {
     }
   }
 }
+
+aside.left-off-canvas-menu:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 130px;
+  height: 100vh;
+  background: #333;
+  -webkit-transform: skewX(6deg);
+  -moz-transform: skewX(6deg);
+  -ms-transform: skewX(6deg);
+  -o-transform: skewX(6deg);
+  transform: skewX(6deg);
+}

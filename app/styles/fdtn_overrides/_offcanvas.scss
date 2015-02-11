@@ -53,7 +53,7 @@ $tabbar-menu-icon-height: $tabbar-height !default;
 $tabbar-menu-icon-line-height: rem-calc(33) !default;
 $tabbar-menu-icon-padding: 0 !default;
 $tabbar-menu-icon-margin: 8px !default;
-$tabbar-menu-icon-border: 1px solid $tabbar-menu-icon-color;
+// $tabbar-menu-icon-border: 1px solid $tabbar-menu-icon-color;
 $tabbar-menu-icon-border-radius: 6px;
 
 $tabbar-hamburger-icon-width: rem-calc(16) !default;
@@ -362,7 +362,6 @@ $menu-slide: "transform 500ms ease" !default;
       padding: $tabbar-menu-icon-padding;
       margin: $tabbar-menu-icon-margin;
       color: $tabbar-menu-icon-color;
-      border: $tabbar-menu-icon-border;
       border-radius: $tabbar-menu-icon-border-radius;
       position: relative;
       @include translate3d(0,0,0);
