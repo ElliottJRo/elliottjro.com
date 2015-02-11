@@ -9,7 +9,7 @@
 body {
   height: 100%;
 }
-body >   .ember-view {
+body > .ember-view {
   height:100%;
   .off-canvas-wrap {
     height: 100%;
@@ -22,7 +22,7 @@ body >   .ember-view {
         height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
         height: 100%;
         margin: 0px auto -105px; /* the bottom margin is the negative value of the footer's height */
-        padding-bottom: 155px;
+        padding-bottom: 105px;
       }
     }
   }
