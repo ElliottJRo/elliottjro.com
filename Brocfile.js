@@ -9,7 +9,7 @@ var app = new EmberApp({
   "ember-cli-foundation-sass": {
     "modernizer": true,
     "fastclick": true,
-    "foundationJs": "all"
+    "foundationJs": null
   }
 });
 
@@ -78,9 +78,6 @@ app.import({
 
 // import velocity
 app.import("bower_components/velocity/velocity.js");
-
-app.import("vendor/foundation/offcanvas-override.js");
-
 
 
 module.exports = app.toTree();

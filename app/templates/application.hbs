@@ -1,33 +1,25 @@
-<div class="off-canvas-wrap" data-offcanvas>
-  <div class="fixed off-canvas-fixed">
-{{!-- 
-    <nav class="tab-bar" data-topbar data-options="is_hover: false"> --}}
-{{!--       <section class="left-small"> --}}
-    <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-{{!--       </section> --}}
-{{!-- 
-    </nav> --}}
+<button class="menu-button" {{action "openMenuAction"}}></button>
 
-    <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list">
-        <li><label>Elliott J Ro</label></li>
-        {{#each linkItem in navigationLinks}}
-          <li>
-            {{#link-to linkItem.route}}
-              {{linkItem.name}}
-            {{/link-to}}
-          </li>
-        {{/each}}
-      </ul>
-    </aside>
+<div class="menu-wrap">
+  <aside class="off-canvas-menu">
+    <ul class="icon-list">
+      <li><label>Elliott J Ro</label></li>
+      {{#each linkItem in navigationLinks}}
+        <li class="menu-item">
+          {{#link-to linkItem.route}}
+            {{linkItem.name}}
+          {{/link-to}}
+        </li>
+      {{/each}}
+    </ul>
+  </aside>
+  <button class="close-button" {{action "closeMenuAction"}}></button>
+</div>
+
+
+<div class="content-wrap">
+  <div class="main-content">
+    {{outlet}}
   </div>
-
-  <div class="inner-wrap">
-    <div class="main-content">
-      {{outlet}}
-    </div>
-
-    <a class="exit-off-canvas"></a>
-      {{outlet 'footer'}}
-  </div>
+    {{outlet 'footer'}}
 </div>

@@ -10,4 +10,23 @@ export default Ember.Controller.extend({
 
   slyScrollObject: null,
 
+  isMenuOpen: false,
+
+  actions: {
+    openMenuAction: function() {
+      if(!this.get("isMenuOpen")) {
+        Ember.Logger.info("openMenuAction caught");
+        this.set("isMenuOpen", true);
+        document.body.className += " show-menu";
+      }
+    },
+    closeMenuAction: function() {
+      if(this.get("isMenuOpen")) {
+        Ember.Logger.info("closeMenuAction caugth");
+        this.set("isMenuOpen", false);
+        $(document.body).removeClass("show-menu");
+      }
+    }
+  }
+
 });

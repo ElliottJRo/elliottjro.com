@@ -4,41 +4,77 @@
 
 @import "misc/footer";
 @import "misc/scrollbar";
+@import "misc/off-canvas";
 //@import "misc/transitions";
+
+
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@import "fontAwesome/variables";
+@import "fontAwesome/mixins";
+@import "fontAwesome/path";
+@import "fontAwesome/core";
+@import "fontAwesome/larger";
+@import "fontAwesome/fixed-width";
+@import "fontAwesome/list";
+@import "fontAwesome/bordered-pulled";
+@import "fontAwesome/animated";
+@import "fontAwesome/rotated-flipped";
+@import "fontAwesome/stacked";
+@import "fontAwesome/icons";
+
+
 
 body {
   height: 100%;
 }
 body > .ember-view {
   height:100%;
-  .off-canvas-wrap {
+  overflow: hidden;
+  .content-wrap {
     height: 100%;
-    .inner-wrap {
+    overflow-y: auto;
+    margin-top: 16px;
+    .main-content {
+      min-height: 100%;
+      height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
       height: 100%;
-      overflow-y: auto;
-      margin-top: 16px;
-      .main-content {
-        min-height: 100%;
-        height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-        height: 100%;
-        margin: 0px auto -105px; /* the bottom margin is the negative value of the footer's height */
-        padding-bottom: 105px;
-      }
+      margin: 0px auto -105px; /* the bottom margin is the negative value of the footer's height */
+      padding-bottom: 105px;
     }
   }
 }
 
-aside.left-off-canvas-menu:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -100px;
-  width: 130px;
-  height: 100vh;
-  background: #333;
-  -webkit-transform: skewX(6deg);
-  -moz-transform: skewX(6deg);
-  -ms-transform: skewX(6deg);
-  -o-transform: skewX(6deg);
-  transform: skewX(6deg);
+html, 
+body, 
+.container, 
+.content-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
+
+a:focus,
+button:focus {
+  outline: none;
+}
+button:hover {
+  cursor: pointer;
+}
+
+// aside.left-off-canvas-menu:after {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: -100px;
+//   width: 130px;
+//   height: 100vh;
+//   background: #333;
+//   -webkit-transform: skewX(6deg);
+//   -moz-transform: skewX(6deg);
+//   -ms-transform: skewX(6deg);
+//   -o-transform: skewX(6deg);
+//   transform: skewX(6deg);
+// }
