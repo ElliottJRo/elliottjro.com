@@ -5,19 +5,19 @@
     <ul class="icon-list">
       <li><label>Elliott J Ro</label></li>
       {{#each linkItem in navigationLinks}}
-        <li class="menu-item">
+        <li class="menu-item" {{action "closeMenuAction"}}>
           {{#link-to linkItem.route}}
-            {{linkItem.name}}
+            <span>{{linkItem.name}}</span>
           {{/link-to}}
         </li>
       {{/each}}
     </ul>
   </aside>
-  <button class="close-button" {{action "closeMenuAction"}}></button>
+  {{view 'close-button' class="close-button"}}
 </div>
 
 
-<div class="content-wrap">
+<div class="content-wrap" {{action "closeMenuAction"}}>
   <div class="main-content">
     {{outlet}}
   </div>

@@ -22,7 +22,7 @@ export default Ember.Controller.extend({
     },
     closeMenuAction: function() {
       if(this.get("isMenuOpen")) {
-        Ember.Logger.info("closeMenuAction caugth");
+        Ember.Logger.info("closeMenuAction caught");
         this.set("isMenuOpen", false);
         $(document.body).removeClass("show-menu");
       }

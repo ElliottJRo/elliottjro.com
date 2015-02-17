@@ -1,10 +1,6 @@
-.menu-wrap li {
-  color: #b8b7ad;
-}
-
-.menu-wrap a:hover,
-.menu-wrap a:focus {
-  color: #c94e50;
+.menu-wrap label {
+  color: white;
+  font-size: 2em;
 }
 
 .content-wrap {
@@ -64,11 +60,11 @@
   width: 1em;
   height: 1em;
   position: absolute;
-  right: 1em;
-  top: 1em;
+  right: 0.5em;
+  top: 0.5em;
   overflow: hidden;
   text-indent: 1em;
-  font-size: 0.75em;
+  font-size: 1.75em;
   border: none;
   background: transparent;
   color: transparent;
@@ -124,7 +120,6 @@
 
 .icon-list li {
   display: block;
-  padding: 0.8em;
   -webkit-transform: translate3d(0,500px,0);
   transform: translate3d(0,500px,0);
 }
@@ -200,4 +195,23 @@
   transition-timing-function: cubic-bezier(0.7,0,0.3,1);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+/* Menu Items */
+li.menu-item {
+  display: block;
+  a {
+    display: block;
+    padding: 0.8em;
+    color: $color_light-blue;
+  }
+  a:hover {
+    color: $color_dark-blue;
+  }
+  a.active {
+    color: $color_dark-blue;
+  }
+  a.active:hover {
+    color: $color_grey;
+  }
 }
