@@ -63,6 +63,9 @@
   opacity: 0.6;
   background-color: transparent;
 }
+.menu-button:focus {
+  background-color: transparent;
+}
 
 /* Close Button */
 .close-button {

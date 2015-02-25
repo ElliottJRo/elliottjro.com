@@ -18,9 +18,8 @@ export default Ember.View.extend(VelocityMixin,{
   },
 
   mouseLeave: function() {
-    this.animate({
-      rotateZ: ["0deg", "45deg"]
-    },{
+    this.animate("stop");
+    this.animate("reverse",{
       duration: 500,
       easing: [250, 15]
     });
