@@ -43,6 +43,9 @@ body > .ember-view {
     @media #{$medium-up} {
       padding-top: 70px;
     }
+    @media #{$small-only} {
+      padding-top: 90px;
+    }
     .main-content {
       width: 100%;
       position: relative;
