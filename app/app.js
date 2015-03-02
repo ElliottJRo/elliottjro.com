@@ -26,4 +26,8 @@ App.Store = DS.Store.create({
 
 loadInitializers(App, config.modulePrefix);
 
+if(config.environment === 'production') {
+    Ember.Logger.info = Ember.Logger.warn = Ember.Logger.log = Ember.Logger.error = function () {};
+}
+
 export default App;
