@@ -3,15 +3,6 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var env = process.env.EMBER_ENV;
 var config = require("./config/environment")(env);
-var HtmlbarsCompiler = require('ember-cli-htmlbars');
-
-var templateTree = new HtmlbarsCompiler('app/templates', {
-  isHTMLBars: true,
-
-  // provide the templateCompiler that is paired with your Ember version
-  templateCompiler: require('./bower_components/ember/ember-template-compiler')
-});
-
 
 var app = new EmberApp({
   wrapInEval: false,

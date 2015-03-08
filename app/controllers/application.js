@@ -36,6 +36,12 @@ export default Ember.Controller.extend({
                 $(document.body).removeClass("show-menu");
 
             }
+        },
+
+        goto: function(url) {
+
+            window.location.href = url;
+
         }
 
     }
