@@ -7,7 +7,9 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
 
-    //this.resource("projects");
+    this.resource("projects", function() {
+        
+    });
 
     this.resource("contact");
 
