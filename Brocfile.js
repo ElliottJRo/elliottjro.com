@@ -3,6 +3,15 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var env = process.env.EMBER_ENV;
 var config = require("./config/environment")(env);
+var HtmlbarsCompiler = require('ember-cli-htmlbars');
+
+var templateTree = new HtmlbarsCompiler('app/templates', {
+  isHTMLBars: true,
+
+  // provide the templateCompiler that is paired with your Ember version
+  templateCompiler: require('./bower_components/ember/ember-template-compiler')
+});
+
 
 var app = new EmberApp({
   wrapInEval: false,
@@ -10,6 +19,9 @@ var app = new EmberApp({
     "modernizer": true,
     "fastclick": true,
     "foundationJs": null
+  },
+  vendorFiles: {
+    "handlebars.js": null
   }
 });
 
@@ -63,9 +75,11 @@ app.options.inlineContent = {
 // along with the exports of each module as its value.
 
 app.import({
-  development: "bower_components/ember/ember.js",
+  development: "bower_components/ember/ember.debug.js",
   production:  "bower_components/ember/ember.prod.js"
 });
+
+app.import("bower_components/ember/ember-template-compiler.js");
 
 // import Ember addons
 app.import("bower_components/ember-animate/ember-animate.js");
