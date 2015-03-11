@@ -17,8 +17,6 @@ export default Ember.Controller.extend({
 
             if(!this.get("isMenuOpen")) {
 
-                Ember.Logger.info("openMenuAction caught");
-
                 this.set("isMenuOpen", true);
 
                 document.body.className += " show-menu";
@@ -28,8 +26,6 @@ export default Ember.Controller.extend({
         },
         closeMenuAction: function() {
             if(this.get("isMenuOpen")) {
-
-                Ember.Logger.info("closeMenuAction caught");
 
                 this.set("isMenuOpen", false);
 
