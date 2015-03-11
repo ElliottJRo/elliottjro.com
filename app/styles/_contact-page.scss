@@ -1,3 +1,9 @@
 form.contact-form {
   margin-top: 25px;
 }
+
+div.avatar {
+  @media #{$small-only} {
+    margin-bottom: 25px;
+  }
+}
