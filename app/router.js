@@ -9,6 +9,7 @@ Router.map(function() {
 
     this.resource("projects", function() {
         this.route("projectItem", {path: "/:project_id"});
+        this.route("create");
     });
 
     this.resource("contact");

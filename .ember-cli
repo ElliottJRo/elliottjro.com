@@ -10,6 +10,6 @@
   "port": 4200,
   "host": "localhost",
   "live-reload": true,
-  "proxy": "http://localhost:4250",
+  "proxy": "http://localhost:4250/api",
   "environment": "development"
 }
