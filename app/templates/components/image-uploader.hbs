@@ -1,0 +1,25 @@
+<button class="btn" {{action "uploadAllFiles"}}>Upload All</button>
+<button class="btn" {{action "clearAllFiles"}}>Clear</button>
+<button class="btn" {{action "abortUpload"}}>Abort Upload</button>
+<div style="height: 200px;background-color: grey" class="large-12">
+
+
+
+
+</div>
+{{#if uploadStatus.uploading}}
+    <h3 class="uploading-percentage">Uploaded Percentage: {{uploadStatus.percentComplete}}%</h3>
+{{/if}}
+{{#if uploadStatus.error}}
+    <div class="error">An error occurred during the upload process. Please try again later.</div>
+{{/if}}
+
+{{#each validFile in validFiles}}
+
+    <div {{bind-attr class="className :file"}}>
+        {{validFile.name}}
+        <a class="remove" {{action "deleteFile" validFile}}>Discard.</a>
+        {{view ImagePreview imageBinding="validFile"}}
+    </div>
+
+{{/each}}
