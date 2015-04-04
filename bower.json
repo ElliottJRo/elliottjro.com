@@ -15,7 +15,6 @@
     "ic-ajax": "~1.0.4",
     "foundation": "~5.5.0",
     "sly": "~1.3.0",
-    "ember-animate": "~0.3.7",
     "velocity": "~1.2.2",
     "ember-droplet": "~0.9.3"
   }

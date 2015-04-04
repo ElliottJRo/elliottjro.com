@@ -78,9 +78,6 @@ app.import({
   production: "bower_components/jquery/dist/jquery.min.js"
 });
 
-// import Ember addons
-app.import("bower_components/ember-animate/ember-animate.js");
-
 // import velocity - animation bootstraper / optimizer
 app.import("bower_components/velocity/velocity.js");
 
