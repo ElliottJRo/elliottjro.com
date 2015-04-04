@@ -1,6 +1,7 @@
 <div class="row">
   <div class="large-12 columns">
     <h3>Projects - Create</h3>
+    {{#link-to 'projects'}}Back{{/link-to}}
     <hr>
   </div>
 </div>
@@ -10,7 +11,7 @@
         <div class="row">
             <div class="large-12 columns">
                 <label>Image
-                    {{image-uploader}}
+                    {{input type="file"}}
                 </label>
             </div>
         </div>
