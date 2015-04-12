@@ -5,9 +5,11 @@ export default Ember.View.extend(VelocityMixin,{
     
     tagName: 'button',
 
-    click: function() {
+    click: function(e) {
 
         this.get("controller").send("closeMenuAction");
+
+        e.preventDefault();
 
     },
 
