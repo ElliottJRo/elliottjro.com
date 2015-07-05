@@ -7,15 +7,15 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
 
-    this.resource("projects", function() {
-        this.route("projectItem", {path: "/:project_id"});
-        this.route("create");
-    });
+    // this.resource("projects", function() {
+    //     this.route("projectItem", {path: "/:project_id"});
+    //     this.route("create");
+    // });
 
     this.resource("contact");
 
     this.resource("blog", function() {
-    //this.route("post", {path: ":postName"});
+        this.route("post", {path: "/:post_name"});
     });
 
 });

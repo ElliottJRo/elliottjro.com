@@ -67,9 +67,9 @@ body > .ember-view {
   }
 }
 
-html, 
-body, 
-.container, 
+html,
+body,
+.container,
 .content-wrap {
   overflow: hidden;
   width: 100%;
@@ -80,6 +80,7 @@ body,
 a:focus,
 button:focus {
   outline: none;
+  background: none;
 }
 button:hover {
   cursor: pointer;
