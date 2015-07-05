@@ -1,10 +1,15 @@
-
 <section class="main-section">
-  <div class="row">
-    <div class="large-12 columns">
-        {{#link-to "blog.post" 'sample-blog-post'}}
-            go to blog post
-        {{/link-to}}
+    <div class="row">
+        <div class="large-10 columns">
+
+            {{#each post in model}}
+                <div class="large-12 columns">
+                    <h2>{{post.title}}</h2>
+                    <h7>Posted on {{post.dateHuman}}</h7>
+                    <p style="margin-top: 15px;">{{post.bodyShort}}.. {{#link-to "blog.post" post.url}}Continue Reading <i class="fa fa-long-arrow-right"></i> {{/link-to}}</p>
+                </div>
+                <hr>
+            {{/each}}
+        </div>
     </div>
-  </div>
 </section>
